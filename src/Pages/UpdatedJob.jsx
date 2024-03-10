@@ -39,7 +39,7 @@ function UpdatedJob() {
   ];
   const onSubmit = (data) => {
     data.skills = selectedOptions;
-    fetch(`http://localhost:3000/update-job/${id}`, {
+    fetch(`https://job-portal-backend-cuds.onrender.com/update-job/${id}`, {
       method: "PATCH",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

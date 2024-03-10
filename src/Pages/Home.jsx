@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setIsLoading(true);
     // fetch("jobs.json")
-    fetch("http://localhost:3000/all-jobs")
+    fetch("https://job-portal-backend-cuds.onrender.com/all-jobs")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched data:", data);

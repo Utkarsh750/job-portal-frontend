@@ -22,7 +22,7 @@ function CreateJob() {
   const onSubmit = (data) => {
     data.skills = selectedOptions;
     // console.log(data);
-    fetch("http://localhost:3000/post-job", {
+    fetch("https://job-portal-backend-cuds.onrender.com/post-job", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

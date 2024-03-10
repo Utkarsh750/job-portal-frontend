@@ -30,7 +30,7 @@ function MyJobs() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://localhost:3000/myJobs/mega@gmail.com")
+    fetch("https://job-portal-backend-cuds.onrender.com/myJobs/mega@gmail.com")
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);
@@ -49,7 +49,7 @@ function MyJobs() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3000/api/jobsdelete/${id}`, {
+    fetch(`https://job-portal-backend-cuds.onrender.com/api/jobsdelete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
